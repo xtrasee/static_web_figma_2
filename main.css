@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+
+/* header */
+
+header{
+    background-color: #926FF6;
+    overflow: hidden;
+    bottom: -25px;
+    position: relative;
+}
+
+header::after{
+    content: "";
+    position: absolute;
+    height: 80px;
+    left: -5%;
+    right: -5%;
+    border-radius: 50%;
+    bottom: -25px;
+    background: #fff;
+}
+
+.nav li{
+    list-style-type: none;
+    padding: 7px 10px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 12px;
+    font-family: 'Poppins';
+}
+
+.logo{
+    font-size: 1.5em;
+    float: left;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.center{
+    color: #FFFFFF;
+    padding: 100px;
+    text-align: center;
+    margin-top: 3em;
+    font-family: 'Poppins';
+}
+
+.miniHeader{
+    color: #FFE074;
+    padding-bottom: 0.5em;
+    line-height: 71.5%;
+    font-weight: lighter;
+}
+
+.center h1{
+    font-size: 4em;
+    font-weight: bolder;
+}
+
+/* scroll icon */
+.center img{
+    margin-top: 3em;
+}
+
+/* video feature section */
+
+.clearfix{
+    overflow: auto;
+}
+
+.videoFeature{
+    margin-top: 8em;
+    font-family: 'Poppins';
+    border: 2px solid blue;
+    width: 75%;
+    margin-left: 12.5%;
+
+}
+
+.miniHeaderTwo{
+    color: #FFAE00;
+    font-size: 1em;
+}
+
+.videoFeature h3{
+    margin-top: .8em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.videoDesc{
+    color: #4F4F4F;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    margin-top: 2em;
+    line-height: 200%;
+}
+
+.playButton{
+    margin-top: 2em;
+    border: 1px solid red;
+    width: 19%;
+}
+
+.playButton p{
+    color: #F3849F;
+    float: right;
+    padding-top: 0.75em;
+}
