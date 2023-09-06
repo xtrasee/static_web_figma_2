@@ -10,12 +10,26 @@
     src: url(/fonts/Poppins-Regular.ttf);
 }
 
+/* layout helpers */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+  
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* header */
 
 header{
+    overflow: auto;
+    overflow-y: hidden;
     background-color: #926FF6;
-    overflow: hidden;
-    bottom: -25px;
     position: relative;
 }
 
@@ -74,6 +88,12 @@ header::after{
 
 /* video feature section */
 
+
+.img2{
+    float: right;
+    margin-left: 3em;
+}
+
 .clearfix{
     overflow: auto;
 }
@@ -81,10 +101,9 @@ header::after{
 .videoFeature{
     margin-top: 8em;
     font-family: 'Poppins';
-    border: 2px solid blue;
     width: 75%;
     margin-left: 12.5%;
-
+    text-align: left;
 }
 
 .miniHeaderTwo{
@@ -93,7 +112,7 @@ header::after{
 }
 
 .videoFeature h3{
-    margin-top: .8em;
+    margin-top: .3em;
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -104,16 +123,83 @@ header::after{
     font-size: 0.8em;
     margin-top: 2em;
     line-height: 200%;
+    padding-right: 5em;
 }
 
 .playButton{
     margin-top: 2em;
-    border: 1px solid red;
-    width: 19%;
+    width: max-content;
 }
 
 .playButton p{
     color: #F3849F;
     float: right;
     padding-top: 0.75em;
+}
+
+/* icon box */
+
+.container{
+    text-align: center;
+    font-family: 'Poppins'; 
+    margin-top: 14em;
+    color: #4F4F4F;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.container h4{
+    font-style: bold;
+}
+
+.container p{
+    font-size: .75em;
+    letter-spacing: 0.36px;
+    padding-top: 0.5em;
+}
+
+.iconOne{
+    background-color: #926FF6;
+    padding: 0.8em;
+    border-radius: 50%;
+}
+
+.iconTwo{
+    background-color: #F3849F;
+    padding: 0.8em;
+    border-radius: 50%;
+}
+
+.iconThree{
+    background-color: #79CFFF;
+    padding: 0.8em;
+    border-radius: 50%;
+}
+
+/* portfolio section */
+
+.portfolio{
+    font-family: 'Poppins';
+    width: 75%;
+    margin-left: 12.5%;
+    text-align: left;
+}
+
+.port{
+    margin-top: 20em;
+    margin-bottom: 1em;
+}
+
+.portfolio h2{
+    color: #4F4F4F;
+    font-size: 1.5em;
+    font-style: bold;
+    margin-bottom: 1em;
+}
+
+.projects li{
+    float: left;
+    font-size: 0.75em;
+    padding: 5px 20px;
+    list-style-type: none;
 }
