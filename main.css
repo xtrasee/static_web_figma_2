@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+.body{
+    overflow-x: hidden;
+}
+
 /* fonts */
 @font-face {
     font-family: 'Poppins';
@@ -16,6 +20,8 @@
     float: left;
     width: 33.33%;
     padding: 15px;
+    z-index: 1;
+    padding: 3em;
 }
   
 .row::after {
@@ -27,7 +33,7 @@
 /* header */
 
 header{
-    overflow: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     background-color: #926FF6;
     position: relative;
@@ -98,6 +104,12 @@ header::after{
     overflow: auto;
 }
 
+.class::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .videoFeature{
     margin-top: 8em;
     font-family: 'Poppins';
@@ -139,13 +151,15 @@ header::after{
 
 /* icon box */
 
-.container{
+.row{
     text-align: center;
     font-family: 'Poppins'; 
     margin-top: 14em;
-    color: #4F4F4F;
     width: 75%;
     margin-left: 12.5%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2em;
 }
 
 .container h4{
@@ -180,21 +194,27 @@ header::after{
 
 .portfolio{
     font-family: 'Poppins';
-    width: 75%;
-    margin-left: 12.5%;
     text-align: left;
 }
 
+.portfolio svg{
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    top: 130%;
+}
+
 .port{
-    margin-top: 20em;
+    margin-top: 6em;
     margin-bottom: 1em;
+    font-weight: bolder;
 }
 
 .portfolio h2{
     color: #4F4F4F;
     font-size: 1.5em;
     font-style: bold;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .projects li{
@@ -202,4 +222,39 @@ header::after{
     font-size: 0.75em;
     padding: 5px 20px;
     list-style-type: none;
+    margin-bottom: 4em;
+    color: #828282;
+}
+
+/* portfolio - cards */
+
+.gallery{
+    width: 75%;
+    margin-left: 12.5%;
+    float: left;
+    height: 60em;
+    position: relative;
+}
+
+.cards{
+    display: block;
+    width: 26em;
+    height: 271px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05), 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+    float: left;
+    margin-right: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+/* blog section */
+
+.blog{
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    bottom: -210%;
+    left: -1%;
 }
