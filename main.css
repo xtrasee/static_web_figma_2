@@ -251,10 +251,58 @@ header::after{
 
 /* blog section */
 
-.blog{
+.background{
     display: inline-block;
     position: absolute;
     z-index: -1;
     bottom: -210%;
     left: -1%;
+}
+
+.blog{
+    margin-top: 78em;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.miniHeaderThree{
+    text-align: center;
+    font-family: 'Poppins';
+    color: #FFAE00;
+    font-size: 0.75em;
+}
+
+.recentBlogs{
+    text-align: center;
+    font-family: 'Poppins';
+    color: #4F4F4F;
+    letter-spacing: 2px;
+    padding-top: 0.5em;
+    font-size: 1.75;
+}
+
+.blog img{
+    width: 289px;
+    height: 195px;
+    border-radius: 5px;
+}
+
+.category{
+    font-size: 0.75em;
+    font-family: 'Poppins';
+    margin-top: 0.5em;
+}
+
+.articleTitle{
+    color: #4F4F4F;
+    letter-spacing: 0.368px;
+    font-size: 1em;
+    margin-top: 0.5em;
+    font-family: 'Poppins';
+}
+
+.date{
+    font-family: 'Poppins';
+    color: #4F4F4F;
+    padding-top: 2em;
 }
