@@ -15,6 +15,15 @@
 }
 
 /* layout helpers */
+.clearfix{
+    overflow: auto;
+}
+
+.class::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 
 .column {
     float: left;
@@ -22,6 +31,7 @@
     padding: 15px;
     z-index: 1;
     padding: 3em;
+    height: 100%;
 }
   
 .row::after {
@@ -98,16 +108,6 @@ header::after{
 .img2{
     float: right;
     margin-left: 3em;
-}
-
-.clearfix{
-    overflow: auto;
-}
-
-.class::after{
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .videoFeature{
@@ -201,11 +201,11 @@ header::after{
     display: inline-block;
     position: absolute;
     z-index: -1;
-    top: 130%;
+    top: 90%;
 }
 
 .port{
-    margin-top: 6em;
+    margin-top: 10em;
     margin-bottom: 1em;
     font-weight: bolder;
 }
@@ -255,14 +255,14 @@ header::after{
     display: inline-block;
     position: absolute;
     z-index: -1;
-    bottom: -210%;
-    left: -1%;
+    left: -0.25%;
 }
 
 .blog{
-    margin-top: 78em;
+    margin-top: 95em;
     width: 75%;
     margin-left: 12.5%;
+    padding-bottom: 10em;
 }
 
 .miniHeaderThree{
@@ -270,6 +270,7 @@ header::after{
     font-family: 'Poppins';
     color: #FFAE00;
     font-size: 0.75em;
+    padding-top: 15em;
 }
 
 .recentBlogs{
@@ -303,6 +304,40 @@ header::after{
 
 .date{
     font-family: 'Poppins';
-    color: #4F4F4F;
+    color: #828282;
     padding-top: 2em;
+    bottom: 0;
 }
+
+/* footer */
+
+.footer p{
+    font-family: Poppins;
+    letter-spacing: 0.2em;
+    color: #F7EEFF;
+    text-align: center;
+    padding-top: 6.5em;
+    padding-bottom: 1em;
+    font-size: 0.75em;
+}
+
+.footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.footer{
+    position: relative;
+    margin-top: 30em;
+    height: 12em;
+    right: 25%;
+    background-color: #333;
+    border-radius: 40%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    overflow: hidden;
+    width: 150%;
+}
+
